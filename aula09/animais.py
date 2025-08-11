@@ -1,17 +1,13 @@
 class Animal:
-
-    def __init__(self):
-        print("Criando o animal ...")
-        self.especie = ""
+    def movimentar(self, distancia):
+        print("Animal se movimentando", distancia)
 
 
 class Gato(Animal):
-    pelo = ""
+    def movimentar(self, distancia):
+        print("Gato andando", distancia)
 
 
 class Peixe(Animal):
-    def __init__(self):
-        print("Criando o peixe ...")
-        self.escama = ""
-        #O que acontece se comentar a linha abaixo?
-        super().__init__()
+    def movimentar(self, distancia):
+        print("Peixe nadando", distancia)

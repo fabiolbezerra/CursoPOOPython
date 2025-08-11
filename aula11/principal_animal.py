@@ -1,11 +1,10 @@
 from animais import Animal, Gato, Peixe
 
 
-animal = Animal()
-animal.movimentar(50)
-
 gato = Gato()
+gato.setNome('Garfield')
 gato.movimentar(100)
 
 peixe = Peixe()
+peixe.setNome('Nemo')
 peixe.movimentar(150)

@@ -2,12 +2,10 @@ from animais import Animal, Gato, Peixe
 
 
 animal = Animal()
-print("Espécie do animal: ", animal.especie, '\n')
+animal.movimentar(50)
 
 gato = Gato()
-print("Espécie do gato: ", gato.especie)
-print("Pêlo do gato: ", gato.pelo)
+gato.movimentar(100)
 
 peixe = Peixe()
-print("Espécie do peixe: ", peixe.especie)
-print("Escama do peixe: ", peixe.escama)
+peixe.movimentar(150)

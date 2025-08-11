@@ -4,8 +4,5 @@ class Carro:
     ano = 0
     placa = ""
 
-    def __init__(self, modelo, cor, ano, placa):
-        self.modelo = modelo
-        self.cor = cor
-        self.ano = ano
-        self.placa = placa
+    def __str__(self):
+        return "Carro[modelo=" + self.modelo + ", cor=" + self.cor + ", placa=" + self.placa + "]"

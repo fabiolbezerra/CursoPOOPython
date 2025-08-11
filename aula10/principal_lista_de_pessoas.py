@@ -1,15 +1,21 @@
 from pessoas import Pessoa, Aluno, Professor
 
 
-fulano = Pessoa()
-fulano.setNome("Fulano")
+#lista admite qualquer tipo de objeto
+pessoas = []
 
-ciclano = Aluno()
-ciclano.setNome("Ciclano")
+#Adicionando uma pessoa
+pessoas.append(Pessoa())
+pessoas[0].setNome("Fulano")
+
+#Adicionando um aluno
+pessoas.append(Aluno())
+pessoas[1].setNome("Ciclano")
 #não há casting, pois ciclano é um Aluno
-ciclano.setMatricula("2025123")
+pessoas[1].setMatricula("2025123")
 
-beltrano = Professor()
-beltrano.setNome("Beltrano")
+#Adicionando um professor
+pessoas.append(Professor())
+pessoas[2].setNome("Beltrano")
 #não há casting, pois beltrano é um Professor
-beltrano.setSalario(1518)
+pessoas[2].setSalario(1518)
